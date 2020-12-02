@@ -99,7 +99,8 @@ export const GameForm = props => {
                     }
 
                     // Send POST request to your API
-                    createGame(game)
+                    createGame(game)    
+                        .then(() => { props.history.push('./')})
                 }}
                 className="btn btn-primary">Create</button>
         </form>
